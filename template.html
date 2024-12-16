@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Status Update - TrackHub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="header">
+          <h1>Your Order Has Arrived at the Final Delivery Hub!</h1>
+        </div>
+
+        <div class="template-body">
+          <div class="box">
+            <h3>Hi {{customerName}} 👋,</h3>
+            <p>
+              We’re excited to inform you that your order {{orderId}} has
+              arrived at the final delivery hub and is almost on its way to you!
+            </p>
+          </div>
+
+          <div class="box">
+            <p><strong>Here’s a quick summary of your order:</strong></p>
+            <div class="order-summary">
+              <div class="order-boxes">
+                <div class="order-box">
+                  <h4>Customer Name</h4>
+                  <p>{{userName}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Order ID</h4>
+                  <p>{{orderId}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Status</h4>
+                  <p>{{currentStatus}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Tracking Number</h4>
+                  <p>{{trackingNumber}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Shipping Address</h4>
+                  <p>{{shippingAddress}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Phone</h4>
+                  <p>{{userPhone}}</p>
+                </div>
+                <div class="order-box">
+                  <h4>Email</h4>
+                  <p>{{userEmail}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <p>For real-time updates on your order, click the button below:</p>
+            <a href="{{trackingUrl}}">
+              <button class="btn btn-black">Track Your Order Now</button>
+            </a>
+          </div>
+
+          <div class="box contact-details">
+            <p>Thank you for choosing TrackHub!</p>
+            <strong>The TrackHub Team</strong>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="/images/logo-abstract.png" alt="TrackHub logo" />
+              <span>TrackHub</span>
+            </div>
+            <p>Simplifying shipping for e-commerce businesses.</p>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              If you have any questions, feel free to contact us at
+              <strong>support@trackhub.ltd</strong>.
+            </p>
+            <a href="https://trackhub.ltd/unsubscribe">Unsubscribe</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
